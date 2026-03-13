@@ -1,0 +1,11 @@
+model_list:
+  - model_name: sonnet-4.6
+    litellm_params:
+      model: "os.environ/AWS_SONNET_4_6_PROFILE"
+      aws_region_name: "os.environ/AWS_REGION_NAME"
+      aws_access_key_id: "os.environ/AWS_ACCESS_KEY_ID"
+      aws_secret_access_key: "os.environ/AWS_SECRET_ACCESS_KEY"
+
+router_settings:
+  routing_strategy: simple-shuffle
+  num_retries: 2
