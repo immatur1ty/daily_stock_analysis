@@ -1,5 +1,5 @@
 model_list:
-  - model_name: sonnet-4.6
+  - model_name: bedrock/sonnet-4.6
     litellm_params:
       model: "os.environ/AWS_SONNET_4_6_PROFILE"
       aws_region_name: "os.environ/AWS_REGION_NAME"
