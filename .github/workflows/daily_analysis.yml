@@ -66,6 +66,11 @@ jobs:
           LITELLM_CONFIG_YAML: ${{ vars.LITELLM_CONFIG_YAML || secrets.LITELLM_CONFIG_YAML }}
           LITELLM_API_KEY: ${{ secrets.LITELLM_API_KEY }}
           LITELLM_MODEL: ${{ vars.LITELLM_MODEL || secrets.LITELLM_MODEL }}
+          AWS_SONNET_4_6_PROFILE: ${{ vars.AWS_SONNET_4_6_PROFILE || secrets.AWS_SONNET_4_6_PROFILE }}
+          AWS_REGION_NAME: ${{ vars.AWS_REGION_NAME || secrets.AWS_REGION_NAME }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
 
           # Gemini AI（主选）
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
